@@ -1,0 +1,25 @@
+{
+"vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before" : ["q", "q"],
+      "after" : [
+                "q", "f", "b", "v", "e", "s", "F", "a", "l", "s", "e", "<ESC>", "q", // Change True to False
+                "q", "t", "b", "v", "e", "s", "T", "r", "u", "e", "<ESC>", "q",      // Change False to True
+                "b", "d", "w"                                                        // Delete output from macro recordings
+                ]
+    }
+  ],
+  "vim.insertModeKeyBindings": [
+    {
+    "before": ["f", "f"],
+    "after": ["<esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindings": [
+    {
+    "before": ["a"],
+    "after" : ["i"]
+    }
+  ]
+}
+
