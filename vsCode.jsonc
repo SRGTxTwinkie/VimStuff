@@ -1,5 +1,5 @@
 {
-"vim.normalModeKeyBindingsNonRecursive": [
+  "vim.normalModeKeyBindingsNonRecursive": [
     {
       "before" : ["q", "q"],
       "after" : [
@@ -7,18 +7,30 @@
                 "q", "t", "b", "v", "e", "s", "T", "r", "u", "e", "<ESC>", "q",      // Change False to True
                 "b", "d", "w"                                                        // Delete output from macro recordings
                 ]
+      
     }
   ],
   "vim.insertModeKeyBindings": [
     {
-    "before": ["f", "f"],
-    "after": ["<esc>"]
+      "before": ["f", "f"],
+      "after": ["<esc>"]
+    },
+    {
+      "before" : ["~", "a","i"],
+      "after" : ["esc", "v", "f", ")", "left", "y", "o", "esc", "p", // Select params from inside paranths
+                 ":","s","u","b","/","\\"," ","/","/","g","<CR>", // Get rid of all the spaces
+                 ":","s","u","b","/",",","/","\\","n"," "," "," "," "," "," "," ","s","e","l","f",".","/","g","<CR>", 
+                 // Replace commas with newlines and add self.
+                 "d", "d",
+                 "q", "a", "f", ".", "right", "y", "w", "E", "a", "right", " ", "=", " ", "<ESC>", "p", "down", "0", "w", "q" 
+                 // Create macro for putting the rest of the variables in
+                ]
     }
   ],
   "vim.normalModeKeyBindings": [
     {
-    "before": ["a"],
-    "after" : ["i"]
+      "before": ["a"],
+      "after" : ["i"]
     }
   ]
 }
